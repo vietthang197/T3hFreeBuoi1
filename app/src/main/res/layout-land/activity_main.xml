@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Layout chứa menu button điều khiển-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Button dùng để lưu ảnh được vẽ -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"/>
+        <!-- Button dùng để xóa ảnh đang vẽ -->
+        <Button
+            android:id="@+id/btn_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eraser"/>
+        <!-- Button chọn màu-->
+        <Button
+            android:id="@+id/btn_change_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red"/>
+    </LinearLayout>
+
+    <!--Layout chứa phần vẽ PaintView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <thangducanh.tagroup.com.t3hfreebuoi1.PaintView
+            android:id="@+id/paint_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>
